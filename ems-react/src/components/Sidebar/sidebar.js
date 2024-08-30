@@ -6,7 +6,7 @@ const Sidebar = () => {
     <>
       <div className='left-section'>
         <section className='text-center'>
-        <img src="images/Shamilogo.png" alt='logo' className='img-fluid mb-4 mt-2'/> <br/>
+        <img src='images/Shamilogo.png' alt='shamiit_logo' className='img-fluid mb-4 mt-2'/> <br/>
         <button className='btn btn-warning mb-4 w-75'>Dashboard</button>
         </section>
         <section className='d-flex flex-column ps-3'>

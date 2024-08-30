@@ -1,6 +1,6 @@
 .widgets-section{
     width: 87px;
-    height: 100vh;
+    min-height: 89vh;
     background-color: #ffffff;
     border: 1px solid lightgray;
 }
@@ -8,7 +8,6 @@
 .menu-sec{
     width: 86px;
     height: 104px;
-    border: 1px solid lightgray;
 }
 
 /* .menu-inner{

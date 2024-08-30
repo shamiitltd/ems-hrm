@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
-import Sidebar from './components/Sidebar/sidebar';
+import Dashboard from './components/Dashboard/dashboard';
 
 function App() {
   return (
     <>
-    <Sidebar/>
+      <Dashboard />
     </> 
     );
 }

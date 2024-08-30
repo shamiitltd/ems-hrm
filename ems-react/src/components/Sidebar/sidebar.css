@@ -4,8 +4,8 @@ a{
 }
 .left-section{
     background-color: #1D2433;
-    min-height: 1024px;
-    width: 244px;
+    min-height: 100vh;
+    width: 256px;
 }
 h5,p{
     color:gray

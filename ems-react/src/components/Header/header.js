@@ -11,20 +11,20 @@ const Header = ()=>{
                 </div>
                 <div className='top2 text-center border-end'>
                 Your organization <br/>
-                <img src='images/F.png' className='fimg' /> <span>Shamiit</span>
+                <img src='' className='fimg' /> <span>Shamiit</span>
                 </div>
                 <div className='me-auto p-3'>
-                    <i className="fa-solid fa-magnifying-glass"></i>
+                    <button className='btn border-0'><i className="fa-solid fa-magnifying-glass"></i></button>
                 </div>
                 <div className='d-flex align-items-center'>
                     <div className='bg-warning rounded-circle text-center pt-2 me-2 circle1'>
-                        <i className="fa-solid fa-plus"></i>
+                        <a href='#'><i className="fa-solid fa-plus"></i></a>
                     </div>
                     <div className='bg-secondary rounded-circle text-center pt-2 me-2 circle1'>
-                        <i class="fa-regular fa-bell"></i>
+                        <a href='#'><i class="fa-regular fa-bell"></i></a>
                     </div>
                     <div className='bg-secondary rounded-circle text-center pt-2 me-2 circle1'>
-                        <i class="fa-solid fa-user"></i>
+                        <a href='#'><i class="fa-solid fa-user"></i></a>
                     </div>
                 </div>
             </div>
