@@ -1,0 +1,12 @@
+a{
+    color:white;
+    text-decoration:none;
+}
+.left-section{
+    background-color: #1D2433;
+    min-height: 1024px;
+    width: 244px;
+}
+h5,p{
+    color:gray
+}

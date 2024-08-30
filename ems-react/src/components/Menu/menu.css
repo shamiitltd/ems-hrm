@@ -1,0 +1,24 @@
+.widgets-section{
+    width: 87px;
+    height: 100vh;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+}
+
+.menu-sec{
+    width: 86px;
+    height: 104px;
+    border: 1px solid lightgray;
+}
+
+/* .menu-inner{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid black;
+} */
+
+.ll1{
+    height: 45px; 
+    width: 45px;
+}
