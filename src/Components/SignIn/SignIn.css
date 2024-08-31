@@ -1,0 +1,89 @@
+body {
+    background-image: linear-gradient(to right, rgb(253, 253, 157), rgb(240, 238, 221));
+}
+
+@media (max-width:769px) {  
+    .container {
+    display:flex; 
+     flex-direction:column 
+    }
+    }
+
+  
+    
+
+/* 
+
+.Components {
+    display: flex;
+
+}
+
+.img img {
+    border: 2px solid blue;
+    width: 500px;
+    height: 450px;
+}
+
+.btn1 {
+    margin-bottom: 25px;
+    margin-top: 80px;
+    border: 2px solid green;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: rgb(243, 243, 98);
+}
+.btn2 {
+    margin-bottom: 25px;
+    margin-top: 80px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: rgb(236, 236, 223);
+
+}
+.btn{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 8px 45px;
+    margin-left: 10px; 
+     font-size: 15px;
+    background-color: rgb(8, 63, 8);
+    color: white;
+
+ } 
+
+
+
+
+.Input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+
+}
+
+.SignIn {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 25px;
+    margin-left: 20%;
+
+}
+.checkbox{
+    display: flex;
+    color: gray;
+}
+
+.para{
+    margin-left: 100px;
+}  */
