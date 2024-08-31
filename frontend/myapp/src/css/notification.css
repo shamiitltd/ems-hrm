@@ -1,0 +1,101 @@
+/* src/App.css
+.notification-panel {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.notification-panel h2 {
+    margin-bottom: 20px;
+}
+
+.notification-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification-panel li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-panel li.read {
+    background-color: #f0f0f0;
+}
+
+.notification-panel button {
+    padding: 5px 10px;
+    margin-left: 10px;
+} */
+
+.notificationContainer{
+    margin: 0px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.notificationHead{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.back svg{
+    width: 50px;
+    height: 40px;
+}
+
+.notificationList{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* text-align: left; */
+}
+
+.notificationDate{
+    float: left;
+    text-align: left;
+    /* gap: 50px; */
+    margin-left: 40px;
+}
+
+.notifications{
+    margin: 0px 0px;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.notificationItem{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    align-items: center;
+}

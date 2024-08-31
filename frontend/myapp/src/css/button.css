@@ -1,0 +1,39 @@
+.button {
+    color: rgb(11, 74, 146);
+    background-color: rgba(11, 74, 146, 0.3);
+    border: 2px solid rgb(11, 74, 146);
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.button a {
+    font-size: 17px;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    padding: 10px 22px;
+    color: rgb(11, 74, 146);
+    cursor: pointer;
+    background-color: rgb(255, 222, 5);
+    border: 2px solid rgb(255, 222, 5);
+  }
+  
+.primaryBtn {
+    background: #007bff;
+    color: white;
+}
+
+.primaryBtn:hover {
+    background: #0056b3;
+}
+
+.cancelBtn {
+    background: #f8f9fa;
+    color: #212529;
+}
+
+.cancelBtn:hover {
+    background: #e2e6ea;
+}
