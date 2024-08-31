@@ -10,7 +10,6 @@ const Header = ()=>{
                     <button className="border b1 bg-white"></button><button className="border b1 bg-secondary"></button>
                 </div>
                 <div className='top2 text-center border-end'>
-                Your organization <br/>
                 <img src='' className='fimg' /> <span>Shamiit</span>
                 </div>
                 <div className='me-auto p-3'>
