@@ -1,0 +1,304 @@
+/* General Styles */
+.scheduler-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-color: #dc3545;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Header Toolbar */
+.fc-header-toolbar {
+  background-color: transparent;
+  color: #000000;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fc-toolbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.fc-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.fc-button {
+  background-color: #dc3545;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.fc-button:hover {
+  border-bottom: #ffc107;
+}
+
+.fc-button-primary:disabled {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+/* Day Grid Styling */
+.fc-daygrid-day {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  transition: background-color 0.3s ease;
+}
+
+.fc-daygrid-day:hover {
+  background-color: #f1f3f5;
+}
+
+.fc-day-today {
+  background-color: #e9ecef;
+}
+
+.fc-day-past {
+  background-color: #f8f9fa;
+}
+
+/* Event Styling */
+.fc-event {
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.fc-event:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Custom Event Content */
+.custom-event-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-event-content b {
+  font-size: 14px;
+}
+
+.custom-event-content i {
+  font-size: 12px;
+}
+
+/* Loading and Error Messages */
+p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* List View Styling */
+.fc-list {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.fc-list-item {
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.fc-list-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Time Grid Styling */
+.fc-timegrid-slot {
+  background-color: #f8f9fa;
+}
+
+.fc-timegrid-slot-label {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.fc-timegrid-event {
+  background-color: #28a745;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.fc-timegrid-event:hover {
+  background-color: #218838;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .scheduler-container {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+
+  .fc-header-toolbar {
+    background-color: #495057;
+  }
+
+  .fc-daygrid-day,
+  .fc-day-today,
+  .fc-day-past {
+    background-color: #495057;
+    border-color: #6c757d;
+  }
+
+  .fc-daygrid-day:hover {
+    background-color: #6c757d;
+  }
+
+  .fc-event {
+    background-color: #17a2b8;
+  }
+
+  .fc-event:hover {
+    background-color: #138496;
+  }
+
+  .fc-list {
+    background-color: #343a40;
+  }
+
+  .fc-list-item {
+    border-color: #6c757d;
+  }
+
+  .fc-timegrid-slot {
+    background-color: #495057;
+  }
+
+  .fc-timegrid-event {
+    background-color: #ffc107;
+  }
+
+  .fc-timegrid-event:hover {
+    background-color: #e0a800;
+  }
+
+  p, .error-message {
+    color: #f8f9fa;
+  }
+}
+
+/* Responsive Design */
+
+/* Small Devices (up to 576px) */
+@media (max-width: 576px) {
+  .fc-header-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fc-toolbar-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .fc-button-group {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .fc-button {
+    padding: 6px 10px;
+  }
+
+  .fc-daygrid-day, .fc-timegrid-slot {
+    font-size: 12px;
+  }
+
+  .fc-event {
+    font-size: 12px;
+  }
+
+  .custom-event-content b, .custom-event-content i {
+    font-size: 10px;
+  }
+}
+
+/* Medium Devices (up to 768px) */
+@media (max-width: 768px) {
+  .fc-header-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fc-toolbar-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .fc-button-group {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .fc-button {
+    padding: 8px 12px;
+  }
+
+  .fc-daygrid-day, .fc-timegrid-slot {
+    font-size: 14px;
+  }
+
+  .fc-event {
+    font-size: 14px;
+  }
+
+  .custom-event-content b, .custom-event-content i {
+    font-size: 12px;
+  }
+}
+
+/* Large Devices (up to 992px) */
+@media (max-width: 992px) {
+  .fc-toolbar-title {
+    font-size: 22px;
+  }
+
+  .fc-button-group {
+    gap: 10px;
+  }
+
+  .fc-daygrid-day, .fc-timegrid-slot {
+    font-size: 16px;
+  }
+
+  .fc-event {
+    font-size: 16px;
+  }
+
+  .custom-event-content b, .custom-event-content i {
+    font-size: 14px;
+  }
+}
