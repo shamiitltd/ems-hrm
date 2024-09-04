@@ -1,0 +1,113 @@
+h2 {
+    color: #057e76;
+}
+
+.dropdown-toggle {
+    width: 150%;
+    height: 50px;
+    background-color: #e8eaed;
+    color: #0d9e94;
+}
+
+.table {
+    /* border-top: 60% solid #635f5f; Customize the thickness and color */
+    border-spacing: 15px; /* Adds space between rows and columns */
+    border-collapse: separate; /* Ensures that border-spacing works */
+    background-color: #ffffff;
+    border: none;
+
+}
+
+.tr{
+    color: #0d9e94; 
+}
+.table th {
+    background-color: #ffffff;
+    text-align: center;
+    color: #181717;
+    border: none;
+
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #0d9e94; /* White text color */
+}
+
+.table td small {
+    color: #727273;
+    display: block;
+    font-weight: normal;
+}
+
+.applied {
+    background-color: #4ecdc4;
+    color: white !important;
+}
+
+.screening {
+    background-color: #ff6b6b;
+    color: white !important;
+}
+
+.challenge {
+    background-color: #ffe66d;
+    color: white !important;
+}
+
+.interview {
+    background-color: #4c9393;
+    color: white !important;
+}
+
+.test {
+    background-color: #cb6d20;
+    color: white !important;
+}
+.hire{
+    background-color: #1f875f;
+    color: white !important;
+
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+    border-color: #229954;
+}
+
+.d-flex.justify-content-between.align-items-center {
+    margin-bottom: 30px;
+}
+
+
+
+table th, table td {
+    padding: 20px; /* Adds space inside each cell */
+}
+
+/* Remove border for the first column */
+table th:first-child,
+table td:first-child {
+    border: none;
+}
+
+/* Additional padding to the first column to maintain space */
+table td:first-child {
+    padding-left: 25px; /* Adjust as needed */
+}
+td:hover {
+    background-color: rgb(150, 150, 125);
+    
+  }
+
+ .table th:last-child,
+        .table td:last-child {
+            width: 130px; /* Adjust this value as needed */
+        } 

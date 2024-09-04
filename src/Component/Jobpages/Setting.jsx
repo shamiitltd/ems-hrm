@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Frombuild = () => {
+const Setting = () => {
   return (
     <div className="container my-4">
     <div className="row">
       {/* First from Container */}
       <div className="col-lg-8 mb-3">
         <div className="card h-100 border rounded-lg">
-          <div className='bg-light mx-2 rounded'>
+          <div className='bg-light mx-2 mt-2 rounded'>
             <div className='rounded hp-div justify-content-left py-2 w-75 my-3 mx-3 d-flex flex-column flex-md-row'>
               <button type="button" className="btn btn-light mx-3 mb-2 mb-md-0">Application</button>
               <button className='btn btn-light mx-4 mb-2 mb-md-0'>Hiring Pipeline</button>
@@ -15,14 +15,15 @@ const Frombuild = () => {
             </div>
           </div>
           <div className="card-body mt-3 bg-light">
-            <div className="bg-light py-2 text-white rounded d-flex justify-content-between align-items-center px-3">
-              <h5 className="font-weight-bold text-dark mb-0">Customize your application form</h5>
-              <div className='d-flex'>
-                <button type="button" className="btn btn-outline-secondary mx-1">Previous</button>
-                <button type="button" className="btn btn-outline-secondary mx-1">Cancel</button>
-                <button type="button" className="btn btn-outline-secondary mx-1">Save</button>
-              </div>
-            </div>
+          <div className="bg-light py-2 text-white rounded d-flex flex-column flex-md-row justify-content-between align-items-center px-3">
+  <h5 className="font-weight-bold text-dark mb-2 mb-md-0">Customize your application form</h5>
+  <div className="d-flex flex-column flex-md-row">
+    <button type="button" className="btn btn-outline-secondary mb-2 mb-md-0 mx-md-1">Previous</button>
+    <button type="button" className="btn btn-outline-secondary mb-2 mb-md-0 mx-md-1">Cancel</button>
+    <button type="button" className="btn btn-outline-secondary mx-md-1">Save</button>
+  </div>
+</div>
+
             <div className="mt-3 mx-3 border border-secondary p-3">
               <form className='justify-content-between'>
                 <div className="form-row d-flex">
@@ -144,4 +145,4 @@ const Frombuild = () => {
   )
 }
 
-export default Frombuild
+export default Setting

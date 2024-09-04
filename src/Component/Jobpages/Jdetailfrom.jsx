@@ -1,13 +1,13 @@
 import React from 'react'
-import { TbCircleLetterBFilled } from "react-icons/tb";
-const Candidate = () => {
+
+const Jdetailfrom = () => {
   return (
     <div className="container my-4">
     <div className="row">
-      {/* First Card Container */}
+
       <div className="col-lg-8 mb-3">
         <div className="card h-100 border rounded-lg">
-        <div className='bg-light mx-2 rounded'>
+        <div className='bg-light mx-2 mt-2 rounded'>
   <div className='rounded justify-content-left py-2 w-75 my-3 mx-3 d-flex flex-column flex-md-row'>
     <h5>Header</h5>
   </div>
@@ -36,7 +36,7 @@ const Candidate = () => {
 
 <div className='bg-light  text-dark mb-4 border-gray'>
 <div className="d-flex align-items-center">
-  <TbCircleLetterBFilled />
+  {/* <TbCircleLetterBFilled /> */}
 
 </div>
 
@@ -148,4 +148,4 @@ const Candidate = () => {
   )
 }
 
-export default Candidate
+export default Jdetailfrom

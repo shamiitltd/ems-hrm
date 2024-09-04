@@ -1,0 +1,76 @@
+import React from 'react';
+import './Jobs.css';
+
+const Jobs = () => {
+  const TABLE_HEAD = ['Candidate Name', 'Rating', 'Stages', 'Applied Done', 'Owner'];
+
+  // Sample data array
+  const data = [
+    { name: 'Ashwini', rating: 'A', stages: '', appliedDone: 'Yes', owner: 'John' },
+    { name: 'Riya', rating: 'B', stages: '', appliedDone: 'No', owner: 'Jane' },
+    { name: 'mansi', rating: 'C', stages: 'Screening', appliedDone: 'Yes', owner: 'Doe' }
+  ];
+
+  return (
+    <div>
+      <h1 className='text-bold text-right ml-3 text-dark'>Total Candidates</h1>
+      <div className="bg-secondary m-4 p-4">
+        <table className="table text-left">
+          <thead>
+            <tr>
+              {TABLE_HEAD.map((head) => (
+                <th key={head} className="text-dark py-2 px-1">
+                  {head}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((row, index) => (
+              <tr key={index}>
+                <td>{row.name}</td>
+                <td>{row.rating}</td>
+                <td>{row.stages}</td>
+                <td>{row.appliedDone}</td>
+                <td>{row.owner}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default Jobs;
+=====================================import React, { useState } from 'react';
+
+
+const  Jobdetail = () => {
+  const [activeTab, setActiveTab] = useState('jobDetail');
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'jobDetail':
+        return <div className="p-4">Job Detail Content</div>;
+      case 'jobApplication':
+        return <div className="p-4">Job Application Content</div>;
+      case 'scoreDetail':
+        return <div className="p-4">Score Detail Content</div>;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="container mt-3">
+      {/* <AddJobNavbar setActiveTab={setActiveTab} /> */}
+      <div className="tab-content mt-3">
+        {renderTabContent()}
+      </div>
+    </div>
+  );
+};
+
+export default Jobdetail;
+

@@ -1,34 +1,40 @@
-// import Sidebar from "./Component/Layout/Sidebar";
-// import 'bootstrap/dist/css/bootstrap/min.css';
-// function App() {
-//   return (
-//   <div>
-//     <Sidebar/>
-//   </div>
-//   );
-// }
-
-// export default App;
-import React from 'react'
+import React from 'react';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from "./Component/Recuritment/Sidebar";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Frombuild from './Component/Pages/Frombuild';
-import Candidate from './Component/Pages/Candidate';
-import Hiringpipeline from './Component/Pages/Hiringpipeline';
+import Jobdetail from './Component/Recuritment/Jobdetail';
+import Candidate from './Component/Recuritment/Candidate';
+import CareerSite from './Component/Recuritment/CareerSite';
+import Myrefferral from './Component/Recuritment/Myrefferral';
+
+import JobFrom from './Component/Pages/JobFrom';
+import { Route1 } from './Component/Route1';
+import Hiringpipe from './Component/Recuritment/Hiringpipe';
 
 const App = () => {
   return (
-    <div className='d-flex flex-column flex-md-row bg-info'>
-    <div className='col-12 col-md-auto p-3'>
-      <Sidebar />
-    </div>
-    <div className='col-12 col-md-9 p-3'>
-     <Frombuild/>
-     <Candidate/>
-     <Hiringpipeline/>
-    </div>
-  </div>
-  )
+    <Router>
+      <div className='Dashboard d-flex'>
+        <div className='col-auto'>
+          <Sidebar />
+        </div>
+        <div className='col mx-3 bg-light mt-3'>
+          <Routes>
+            <Route path="/*" element={<Jobdetail />} />
+            <Route path="/Candidate" element={<Candidate />} />
+            <Route path="/Myrefferral" element={<Myrefferral />} />
+            <Route path="/CareerSite" element={<CareerSite />} />
+            <Route path="/Hiringpipe" element={<Hiringpipe />} />
+            <Route path="/Jobfrom" element={<JobFrom/>} />
+            
+            <Route path="/Route" element={<Route1/>} />
+            {/* <Route path="/Frombuild" element={<Frombuild/>}/> */}
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
