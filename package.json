@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "proxy":"http://127.0.0.1:8000/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,6 +17,7 @@
     "@fullcalendar/react": "^6.1.15",
     "@fullcalendar/resource-timeline": "^6.1.15",
     "@fullcalendar/timegrid": "^6.1.15",
+    "@syncfusion/ej2-data": "^26.2.10",
     "@syncfusion/ej2-react-schedule": "^26.2.10",
     "axios": "^1.7.5",
     "date-fns": "^3.6.0",

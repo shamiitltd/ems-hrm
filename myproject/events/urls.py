@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import EventListCreateView, EventDetailView
+from .views import EventListCreate, EventRetrieveUpdateDestroy
 
 urlpatterns = [
-    path('events/', EventListCreateView.as_view(), name='event-list-create'),
-    path('events/<int:pk>/', EventDetailView.as_view(), name='event-detail'),
+    path('events/', EventListCreate.as_view(), name='event-list-create'),
+    path('events/<int:pk>/', EventRetrieveUpdateDestroy.as_view(), name='event-retrieve-update-destroy'),
 ]
