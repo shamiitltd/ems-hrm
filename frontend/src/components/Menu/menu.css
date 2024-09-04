@@ -1,0 +1,23 @@
+.menu-section{
+    width: 87px;
+    min-height: 89vh;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+}
+
+.menu-sec{
+    width: 86px;
+    height: 104px;
+}
+
+/* .menu-inner{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid black;
+} */
+
+.ll1{
+    height: 45px; 
+    width: 45px;
+}
