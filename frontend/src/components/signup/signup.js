@@ -1,6 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import "./signup.css";
 
 const Signup = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/");    // default page
+  };
+
+  const handleSignup = () => {
+    navigate("/signup");   // for navigating to signup page
+  };
+
+  // HTML Code
   return (
     <>
       <div className="text-center p-5">
@@ -14,8 +26,12 @@ const Signup = () => {
           </div>
           <div className="col-12 col-md-6 col-lg-5">
             <section className="mb-4">
-              <button className="btn btn-warning me-2">Sign Up</button>
-              <button className="btn btn-light">Sign In</button>
+            <button type="button" className="btn btn-warning me-2" onClick={handleSignup}>
+                Sign Up
+              </button>
+              <button type="button" className="btn btn-light" onClick={handleLogin}>
+                Sign In
+              </button>
             </section>
             <section className="mb-4">
               <form>

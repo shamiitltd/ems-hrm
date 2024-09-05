@@ -5,8 +5,9 @@ import Header from "../Header/header";
 import Menu from "../Menu/menu";
 
 const Dashboard = () => {
-  return (
+  
     // Writing HTML code
+  return (
     <div className="dashboard d-flex">
       {/* Adding Sidebar component  */}
       <Sidebar className="col-lg-2" />
