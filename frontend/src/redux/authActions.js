@@ -1,5 +1,5 @@
-import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT } from './actionTypes';
 
+import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT } from './actionTypes';
 
 // Simulate an API call
 const fakeAuthApi = (username, password) => {
@@ -21,6 +21,7 @@ export const login = (username, password) => async (dispatch) => {
         const response = await fakeAuthApi(username, password);
         localStorage.setItem('token', response.token); // Store token
         dispatch({ type: LOGIN_SUCCESS, payload: response.token });
+        
     } catch (error) {
         dispatch({ type: LOGIN_FAILURE, payload: error });
     }

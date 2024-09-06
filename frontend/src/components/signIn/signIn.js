@@ -12,6 +12,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const dispatch = useDispatch();
     const { loading, error } = useSelector(state => state);
+    const isAuthenticated = useSelector((state) => state);
 
     const handleLogin = (e) => {
         e.preventDefault();
