@@ -19,7 +19,7 @@ const Dashboard = () => {
             <div class="border-end">
               <div class="d-flex justify-content-between p-3">
                 <h3>Dashboard</h3>
-                <button>
+                <button className="p-2">
                   <i class="fa-solid fa-play"></i> Getting Started
                 </button>
               </div>
