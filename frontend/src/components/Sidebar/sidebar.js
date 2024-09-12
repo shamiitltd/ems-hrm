@@ -21,7 +21,7 @@ const Sidebar = () => {
         <section className='d-flex flex-column ps-3'>
           
             <Link className='mb-3' to=""> <i className='fa-solid fa-inbox text-white'></i> Inbox </Link>
-            <Link className='mb-4' to=""> <i className='fa-solid fa-calendar-days text-white'></i> Calender & tools </Link>
+            <Link className='mb-4' to="/calendar"> <i className='fa-solid fa-calendar-days text-white'></i> Calender & tools </Link>
 
             {/* recruitment section */}
 
