@@ -26,7 +26,7 @@ const Sidebar = () => {
             {/* recruitment section */}
 
             <h5 className='mb-3'>RECRUITMENT</h5>
-            <Link className='mb-3' to=""> <i className="fa-solid fa-bag-shopping text-white"></i> Jobs </Link>
+            <Link className='mb-3' to="/jobs"> <i className="fa-solid fa-bag-shopping text-white"></i> Jobs </Link>
             <Link className='mb-3' to=""> <i className="fa-solid fa-user-group text-white"></i> Candidates </Link>
             <Link className='mb-3' to=""> <i className="fa-solid fa-square-caret-up text-white"></i> My Refferals </Link>
             <Link className='mb-4' to=""> <i className="fa-solid fa-book text-white"></i> Careers Site </Link>

@@ -3,7 +3,7 @@ import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT } from './actionTyp
 const initialState = {
     token: localStorage.getItem('token') || null,
     loading: false,
-    error: null,
+    error: null
 };
 
 const authReducer = (state = initialState, action) => {
