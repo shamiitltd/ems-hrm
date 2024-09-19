@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 20 20 40px rgba(0, 11, 11, 0.595);
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 0 0 20px rgba(92, 195, 229, 0.693);
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters select,
+.filters input {
+  margin-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
