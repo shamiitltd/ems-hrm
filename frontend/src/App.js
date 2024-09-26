@@ -1,28 +1,21 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
-import Login from "./components/signIn/signIn";
-import Signup from "./components/signup/signup";
-import Dashboard from "./components/Dashboard/dashboard";
-import Calendar from "./components/Calendar/maincalendar";
-import HomeJobs from "./components/Recruitment/Jobs/homeJobs";
-import DetailedView from "./components/Recruitment/Jobs/Pages/detailedJobForms";
+import React, { useState } from 'react';
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+import './styles.css';
 
-function App() {
+const App = () => {
+  const [loggedIn, setLoggedIn] = useState(false); // Track login state
+
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login />}></Route>
-          <Route path="/signup" element={<Signup />}></Route>
-          <Route path="/dashboard" element={<Dashboard />}></Route>
-          <Route path="/calendar" element={<Calendar />}></Route>
-          <Route path="/jobs" element={<HomeJobs />}></Route>
-          <Route path="/Jobform" element={<DetailedView />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <div className="app">
+      {loggedIn ? (
+        <Dashboard setLoggedIn={setLoggedIn} />
+      ) : (
+        <Login setLoggedIn={setLoggedIn} />
+      )}
+    </div>
   );
-}
+};
 
 export default App;
+
