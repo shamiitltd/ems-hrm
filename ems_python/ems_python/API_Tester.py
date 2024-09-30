@@ -2,7 +2,7 @@
 import requests
 
 # Example API endpoint and data
-api_url = "https://dummyjson.com/c/3029-d29f-4014-9fb4"  # Replace with your API URL
+api_url = "http://127.0.0.1:8000/api_create/users/create/"  # Replace with your API URL
 
 # Example of a GET request
 def test_API():

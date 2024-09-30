@@ -1,5 +1,5 @@
 """
-URL configuration for ems_python project.
+URL configuration for project_name project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -20,5 +20,3 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
-handler404 = 'ems_backend.views.custom_404_view'
-handler500 = 'ems_backend.views.custom_500_view'
