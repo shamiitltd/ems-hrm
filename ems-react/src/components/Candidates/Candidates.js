@@ -70,7 +70,8 @@ const Candidates = () => {
                       value={candidate.rating}
                       min="1"
                       max="10"
-                      onChange={handleChangeRating}eti 
+                      onChange={handleChangeRating}
+                      eti
                     />
                   </div>
                   <div className="stages">
