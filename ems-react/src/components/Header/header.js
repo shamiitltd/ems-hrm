@@ -6,9 +6,12 @@ import { useNavigate } from 'react-router-dom';
 const Header = ()=>{
     const navigate = useNavigate();
 
-  const UserProfile = () => {
-    navigate("/User_profile");
-  };
+    const UserProfile = () => {
+        navigate("/UserProfile");
+      };
+    
+
+
     return(
         <>
             <div className='header-main d-flex'>
@@ -29,7 +32,7 @@ const Header = ()=>{
                         <a href='#'><i class="fa-regular fa-bell"></i></a>
                     </div>
                     <div className='bg-secondary rounded-circle text-center pt-2 me-2 circle1'>
-                        <a onClick={UserProfile} ><i class="fa-solid fa-user"></i></a>
+                        <a onClick = {UserProfile}><i class="fa-solid fa-user"></i></a>
                     </div>
                 </div>
             </div>
