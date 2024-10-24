@@ -1,4 +1,65 @@
-
+/*body {
+	font-family: Arial, sans-serif;
+	background-color: #eabb5c;
+  }
+  
+  .org-chart {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+  }
+  
+  .org-chart ul {
+	padding-top: 20px;
+	position: relative;
+  }
+  
+  .org-chart ul ul::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border-left: 2px solid #007bff;
+	height: 20px;
+	width: 0;
+  }
+  
+  .org-chart li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	text-align: center;
+  }
+  
+  .org-chart li::before, .org-chart li::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	border-top: 2px solid #007bff;
+	width: 50%;
+	height: 20px;
+  }
+  
+  .org-chart li::before {
+	right: 50%;
+	border-right: 2px solid #007bff;
+  }
+  
+  .org-chart li::after {
+	left: 50%;
+	border-left: 2px solid #007bff;
+  }
+  
+  .org-chart li span {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #007bff;
+	color: white;
+	border-radius: 5px;
+	position: relative;
+  }*/
+  
 
 *{
 	-webkit-box-sizing: border-box;
@@ -22,7 +83,7 @@
  * Include this rule to trigger hasLayout and contain floats.
  */
 .cf {
-    *zoom: 1;
+    *zoom:1;
 }
 
 /* Generic styling */
