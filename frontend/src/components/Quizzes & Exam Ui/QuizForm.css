@@ -1,0 +1,89 @@
+/* Main quiz form container */
+.quiz-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title styling */
+.quiz-form h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Individual question block */
+.question-block {
+    margin-bottom: 20px;
+}
+
+/* Question label */
+.question-block label {
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Style for each radio input and its label */
+.question-block input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #4CAF50; /* Modern green color for the radio button */
+}
+
+/* Styling for the button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button full width for a modern look */
+    margin-top: 20px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Disable button when quiz is submitted */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Quiz report styling */
+.quiz-report {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Report heading */
+.quiz-report h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Report result styling */
+.quiz-report p {
+    font-size: 22px;
+    color: #4CAF50;
+    font-weight: bold;
+}
