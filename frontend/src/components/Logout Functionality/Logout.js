@@ -1,9 +1,9 @@
 import React from 'react';
-import { logoutUser } from '../api';
+// import { logoutUser } from '../api';
 
 const Logout = ({ setLoggedIn }) => {
     const handleLogout = async () => {
-        await logoutUser(); // Call logout API
+        // await logoutUser(); // Call logout API
         setLoggedIn(false); // Update login state
     };
 

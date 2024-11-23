@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/CardSkeleton.css'; // Import the CSS file for styling
+import './CardSkeleton.css'; // Import the CSS file for styling
 
 // Functional component for rendering a card skeleton loader
 const CardSkeleton = () => {
