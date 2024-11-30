@@ -1,0 +1,15 @@
+.navigation-tabs {
+    display: flex;
+    background-color: #2b3a4a;
+    padding: 5px;
+  }
+  
+  .tab {
+    color: white;
+    background-color: #4a5a6a;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 3px;
+  }

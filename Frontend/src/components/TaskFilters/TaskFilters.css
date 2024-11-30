@@ -1,0 +1,16 @@
+.task-filters {
+    display: flex;
+    padding: 10px;
+    background-color: #f4f7fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .status-button, .overdue-button, .comments-button, .mark-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+  }

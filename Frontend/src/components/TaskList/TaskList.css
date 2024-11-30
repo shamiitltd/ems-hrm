@@ -1,0 +1,26 @@
+.task-list {
+    text-align: center;
+    padding: 50px 20px;
+    color: #888;
+  }
+  
+  .create-task-message {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .task-info {
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* extra */
+ 
+  .header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #f7f9fc;
+    font-weight: bold;
+    color: black;
+  }
