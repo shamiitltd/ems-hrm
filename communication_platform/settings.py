@@ -11,8 +11,17 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import sys
+import traceback
 import os
 from datetime import timedelta
+
+# Add at the top of the file
+try:
+    import pkg_resources
+except ImportError:
+    print("pkg_resources not found. Attempting to resolve...")
+    traceback.print_exc()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -88,12 +97,8 @@ WSGI_APPLICATION = 'communication_platform.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'communication_db',
-        'USER': 'root',
-        'PASSWORD': 'your_mysql_password',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
