@@ -1,0 +1,44 @@
+class ChatSocket {
+    constructor(conversationId) {
+        this.socket = new WebSocket(`ws://localhost:8000/ws/chat/${conversationId}/`);
+        
+        this.socket.onopen = this.onOpen.bind(this);
+        this.socket.onmessage = this.onMessage.bind(this);
+        this.socket.onclose = this.onClose.bind(this);
+    }
+
+    sendMessage(content) {
+        this.socket.send(JSON.stringify({
+            type: 'chat_message',
+            content: content
+        }));
+    }
+
+    sendTypingIndicator(isTyping) {
+        this.socket.send(JSON.stringify({
+            type: 'typing_indicator',
+            is_typing: isTyping
+        }));
+    }
+
+    onOpen(event) {
+        console.log('WebSocket connection established');
+    }
+
+    onMessage(event) {
+        const data = JSON.parse(event.data);
+        
+        switch(data.type) {
+            case 'chat_message':
+                this.handleChatMessage(data.message);
+                break;
+            case 'typing_indicator':
+                this.handleTypingIndicator(data);
+                break;
+        }
+    }
+
+    onClose(event) {
+        console.log('WebSocket connection closed');
+    }
+}
